@@ -11,7 +11,7 @@ public class GameDTO implements Serializable {
 	
 	private Long id;
 	private String title;
-	private Platform platfrom;
+	private Platform platform;
 	
 	public GameDTO() {
 	}
@@ -19,7 +19,7 @@ public class GameDTO implements Serializable {
 	public GameDTO(Game entity) {
 		this.id = entity.getId();
 		this.title = entity.getTitle();
-		this.platfrom = entity.getPlatform();
+		this.platform = entity.getPlatform();
 	}
 
 	public Long getId() {
@@ -38,13 +38,12 @@ public class GameDTO implements Serializable {
 		this.title = title;
 	}
 
-	public Platform getPlatfrom() {
-		return platfrom;
+	public Platform getPlatform() {
+		return platform;
 	}
 
-	public void setPlatfrom(Platform platfrom) {
-		this.platfrom = platfrom;
-	}
-	
+	public void setPlatform(Platform platform) {
+		this.platform = platform;
+	}	
 	
 }
